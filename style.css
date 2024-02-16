@@ -1,0 +1,113 @@
+/* ORIGINAL SOURCE CODE */
+/* https://codepen.io/toptalblog/pen/MvjWEz/ */
+
+svg {
+  width: 300px;
+  display: block;
+  /* position: absolute; */
+  border: 1px solid red;
+}
+
+.path-to-animate-reverse,
+.path-to-animate-forward {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation-fill-mode: forwards;
+}
+
+.path-to-animate-reverse {
+  animation: dash-reverse 1s linear forwards;
+}
+
+.path-to-animate-forward {
+  animation: dash-forward 1s linear forwards;
+}
+
+/* draw element in forward or reverse */
+@keyframes dash-reverse {
+  from {
+    stroke-dashoffset: -320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-forward {
+  from {
+    stroke-dashoffset: 320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Timing */
+#r-vertical {
+  animation-delay: 0s; /* Delay the animation for the R Arc by 1 second */
+}
+
+#r-arc {
+  animation-delay: 1s; /* Delay the animation for the R Arc by 1 second */
+}
+
+#r-diagonal {
+  animation-delay: 2s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#o {
+  animation-delay: 2.5s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#s {
+  animation-delay: 3.5s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#i-line-1 {
+  animation-delay: 4.0s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#i-dot-1 {
+  animation-delay: 4.5s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#e-1 {
+  animation-delay: 4.7s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#g-curve {
+  animation-delay: 5.0s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#g-dash {
+  animation-delay: 5.5s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#a-1 {
+  animation-delay: 6.0s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#l {
+  animation-delay: 6.5s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+
+#e-2 {
+  animation-delay: 6.8s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#z {
+  animation-delay: 7.2s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#i-line-2 {
+  animation-delay: 8.5s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#i-dot-2 {
+  animation-delay: 8.5s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
+
+#a-2 {
+  animation-delay: 8.9s; /* Delay the animation for the R Diagonal by 2 seconds */
+}
