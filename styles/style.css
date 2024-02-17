@@ -1,0 +1,142 @@
+/* ORIGINAL SOURCE CODE */
+/* https://codepen.io/toptalblog/pen/MvjWEz/ */
+
+.st0 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+svg {
+  width: 300px;
+  display: block;
+  /* position: absolute; */
+  border: 1px solid red;
+}
+
+.path-to-animate-reverse,
+.path-to-animate-forward {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation-fill-mode: forwards;
+}
+
+.path-to-animate-reverse {
+  animation: dash-reverse 1s linear forwards;
+}
+
+.path-to-animate-forward {
+  animation: dash-forward 5s linear forwards;
+}
+
+/* draw element in forward or reverse */
+@keyframes dash-reverse {
+  from {
+    stroke-dashoffset: -320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-forward {
+  from {
+    stroke-dashoffset: 320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Timing */
+#s-vertical {
+  animation-delay: 0s; /* Delay the animation for the R Arc by 0 second */
+}
+
+/* Timing */
+#r-vertical {
+  animation-delay: 0s; /* Delay the animation for the R Arc by 0 second */
+}
+
+#r-arc {
+  animation-delay: 1s; 
+}
+
+#r-diagonal {
+  animation-delay: 2s;
+}
+
+#o {
+  animation-delay: 2.5s;
+}
+
+#s {
+  animation-delay: 3.5s;
+}
+
+#i-line-1 {
+  animation-delay: 4s;
+}
+
+#i-dot-1 {
+  animation-delay: 4.5s;
+}
+
+#e-1 {
+  animation-delay: 4.7s;
+}
+
+#g-curve {
+  animation-delay: 5s;
+}
+
+#g-dash {
+  animation-delay: 5.5s;
+}
+
+#a-1 {
+  animation-delay: 6s;
+}
+
+#l {
+  animation-delay: 6.5s;
+}
+
+#e-2 {
+  animation-delay: 6.8s;
+}
+
+#z {
+  animation-delay: 7.2s;
+}
+
+#i-line-2 {
+  animation-delay: 8.5s;
+}
+
+#i-dot-2 {
+  animation-delay: 8.5s;
+}
+
+#a-2 {
+  animation-delay: 8.9s;
+}
+
+/* Steve Calla */
+.calla-thin {
+  fill: none; 
+  stroke: rgb(0, 0, 0);
+}
+
+.calla-thick {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke: green;
+}

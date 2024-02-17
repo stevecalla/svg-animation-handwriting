@@ -1,0 +1,33 @@
+.path-to-animate-reverse,
+.path-to-animate-forward {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation-fill-mode: forwards;
+}
+
+.path-to-animate-reverse {
+  animation: dash-reverse 1s linear forwards;
+}
+
+.path-to-animate-forward {
+  animation: dash-forward 1s linear forwards;
+}
+
+/* draw element in forward or reverse */
+@keyframes dash-reverse {
+  from {
+    stroke-dashoffset: -320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-forward {
+  from {
+    stroke-dashoffset: 320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
