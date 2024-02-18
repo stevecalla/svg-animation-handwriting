@@ -32,38 +32,37 @@
   }
 }
 
+.path-to-animate-reverse-calla-2834,
+.path-to-animate-forward-calla-2834 {
+  stroke-dasharray: 2834;
+  stroke-dashoffset: 2834;
+  animation-fill-mode: forwards;
+}
 
-  .path-to-animate-reverse-calla-2834,
-  .path-to-animate-forward-calla-2834 {
-    stroke-dasharray: 2834;
+.path-to-animate-reverse-calla-2834 {
+  animation: dash-reverse-calla-2834 3s linear forwards;
+}
+
+.path-to-animate-forward-calla-2834 {
+  animation: dash-forward-calla-2834 3s linear forwards;
+}
+
+/* draw element in reverse */
+@keyframes dash-reverse-calla-2834 {
+  from {
+    stroke-dashoffset: -2834;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* draw element in forward */
+@keyframes dash-forward-calla-2834 {
+  from {
     stroke-dashoffset: 2834;
-    animation-fill-mode: forwards;
   }
-
-  .path-to-animate-reverse-calla-2834 {
-    animation: dash-reverse-calla-2834 5s linear forwards;
+  to {
+    stroke-dashoffset: 0;
   }
-
-  .path-to-animate-forward-calla-2834 {
-    animation: dash-forward-calla-2834 3s linear forwards;
-  }
-
-  /* draw element in reverse */
-  @keyframes dash-reverse-calla-2834 {
-    from {
-      stroke-dashoffset: -2834;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  /* draw element in forward */
-  @keyframes dash-forward-calla-2834 {
-    from {
-      stroke-dashoffset: 2834;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
+}
