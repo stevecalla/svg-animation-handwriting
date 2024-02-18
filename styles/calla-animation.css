@@ -1,20 +1,20 @@
-.path-to-animate-reverse-calla,
-.path-to-animate-forward-calla {
+.path-to-animate-reverse-calla-320,
+.path-to-animate-forward-calla-320 {
   stroke-dasharray: 320;
   stroke-dashoffset: 320;
   animation-fill-mode: forwards;
 }
 
-.path-to-animate-reverse-calla {
+.path-to-animate-reverse-calla-320 {
   animation: dash-reverse 5s linear forwards;
 }
 
-.path-to-animate-forward-calla {
-  animation: dash-forward 5s linear forwards;
+.path-to-animate-forward-calla-320 {
+  animation: dash-forward 3s linear forwards;
 }
 
 /* draw element in forward or reverse */
-@keyframes dash-reverse-calla {
+@keyframes dash-reverse-calla-320 {
   from {
     stroke-dashoffset: -320;
   }
@@ -23,7 +23,7 @@
   }
 }
 
-@keyframes dash-forward-calla {
+@keyframes dash-forward-calla-320 {
   from {
     stroke-dashoffset: 320;
   }
@@ -31,3 +31,39 @@
     stroke-dashoffset: 0;
   }
 }
+
+
+  .path-to-animate-reverse-calla-2834,
+  .path-to-animate-forward-calla-2834 {
+    stroke-dasharray: 2834;
+    stroke-dashoffset: 2834;
+    animation-fill-mode: forwards;
+  }
+
+  .path-to-animate-reverse-calla-2834 {
+    animation: dash-reverse-calla-2834 5s linear forwards;
+  }
+
+  .path-to-animate-forward-calla-2834 {
+    animation: dash-forward-calla-2834 3s linear forwards;
+  }
+
+  /* draw element in reverse */
+  @keyframes dash-reverse-calla-2834 {
+    from {
+      stroke-dashoffset: -2834;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  /* draw element in forward */
+  @keyframes dash-forward-calla-2834 {
+    from {
+      stroke-dashoffset: 2834;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

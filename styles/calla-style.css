@@ -1,4 +1,8 @@
 /* Steve Calla */
+.calla-svg {
+  width: 200px;
+  height: 200px;
+}
 .calla-thin {
   fill: none; 
   stroke: #000000;
@@ -8,7 +12,7 @@
 .calla-thick {
   fill: none;
   stroke: #000000;
-  stroke-width: 5;
+  stroke-width: 20;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
